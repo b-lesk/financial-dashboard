@@ -19,3 +19,8 @@ To get started, you'll need **Python** installed. Then, set up a **virtual envir
 git clone https://github.com/YOUR_USERNAME/financial-market-analytics-dashboard.git
 cd financial-market-analytics-dashboard
 
+### 2. Set up a virtual environment
+```bash
+python -m venv venv
+
+
