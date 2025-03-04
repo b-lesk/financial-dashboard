@@ -18,9 +18,71 @@ To get started, you'll need **Python** installed. Then, set up a **virtual envir
 ```bash
 git clone https://github.com/YOUR_USERNAME/financial-market-analytics-dashboard.git
 cd financial-market-analytics-dashboard
+```
 
 ### 2. Set up a virtual environment
 ```bash
 python -m venv venv
+```
+### 3. Activate the virtual environment
+- On Windows:
+```bash
+.\venv\Scripts\activate
+```
+- On macOS/Linux:
+```bash
+source venv/bin/activate
+```
+### 4. Install required dependencies
+```bash
+pip install yfinance streamlit plotly pandas
+```
+Alternatively, if you have a `requirements.txt` file, you can install all dependencies at once by running:
+
+```bash
+pip install -r requirements.txt
+```
+
+## ⚙️ Requirements
+- yfinance: To fetch stock market data from Yahoo Finance.
+- Streamlit: For building the web-based dashboard.
+- Plotly: To create interactive stock charts.
+- Pandas: To handle data and manipulate time-series.
 
 
+## 🧑‍💻 Usage
+Run the app with Streamlit:
+```bash
+streamlit run app.py
+```
+This will open the dashboard in your default web browser where you can select stocks, view financial metrics, and interact with charts.
+
+## 🎯 Project Structure
+```bash
+financial-market-analytics-dashboard/
+│
+├── app.py              # Main Streamlit app file
+├── requirements.txt    # List of dependencies
+├── README.md           # Project documentation
+└── assets/             # Store any static assets (like images)
+```
+
+## 📚 Key Financial Metrics
+The dashboard displays the following metrics for each stock:
+
+- Market Cap: The total value of a company's outstanding shares.
+- P/E Ratio: Price-to-earnings ratio, a measure of stock valuation.
+- Dividend Yield: The annual dividend income as a percentage of stock price.
+- Beta: A measure of the stock's volatility compared to the market.
+- 52-Week High/Low: The highest and lowest stock prices over the past year.
+
+## 👨‍💻 Contributions
+Feel free to fork this repository, submit issues, or create pull requests if you'd like to contribute. I welcome any suggestions or improvements!
+
+## 📑 License
+This project is licensed under the [MIT License](https://opensource.org/osd)
+
+## 📜 Acknowledgments
+Yahoo Finance for the stock data.
+Streamlit for building the interactive dashboard.
+Plotly for creating interactive charts.
